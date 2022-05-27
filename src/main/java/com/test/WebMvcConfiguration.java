@@ -30,10 +30,4 @@ public class WebMvcConfiguration extends WebMvcConfigurationSupport {
 
     }
 
-    public static void main(String[] args) {
-
-
-
-    }
-
 }
