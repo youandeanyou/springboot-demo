@@ -19,7 +19,7 @@ public class WebMvcConfiguration extends WebMvcConfigurationSupport {
 
         FastJsonHttpMessageConverter converter = new FastJsonHttpMessageConverter();
         FastJsonConfig config = new FastJsonConfig();
-        config.setWriterFeatures(JSONWriter.Feature.FieldBased, JSONWriter.Feature.NullAsDefaultValue);
+        config.setWriterFeatures(JSONWriter.Feature.NullAsDefaultValue);
         config.setDateFormat("yyyy-MM-dd HH:mm:ss");
         converter.setFastJsonConfig(config);
         List<MediaType> mediaTypes = new ArrayList<>();
