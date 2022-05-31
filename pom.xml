@@ -11,7 +11,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
-        <fastjson.version>2.0.5</fastjson.version>
+        <fastjson.version>2.0.6-SNAPSHOT</fastjson.version>
         <lombok.version>1.18.24</lombok.version>
     </properties>
     <parent>
@@ -53,4 +53,14 @@
             </plugin>
         </plugins>
     </build>
+    <distributionManagement>
+        <repository>
+            <id>rdc-releases</id>
+            <url>https://packages.aliyun.com/maven/repository/2024612-release-OGFpnN/</url>
+        </repository>
+        <snapshotRepository>
+            <id>rdc-snapshots</id>
+            <url>https://packages.aliyun.com/maven/repository/2024612-snapshot-VGE2JZ/</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
