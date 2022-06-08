@@ -21,7 +21,8 @@ public class WebMvcConfiguration extends WebMvcConfigurationSupport {
         FastJsonConfig config = new FastJsonConfig();
         // 这里如果设置了FieldBased，@JSONField注解就生不效了
          config.setWriterFeatures(JSONWriter.Feature.FieldBased, JSONWriter.Feature.NullAsDefaultValue);
-//        config.setWriterFeatures(JSONWriter.Feature.NullAsDefaultValue);
+        // 如果去除JSONWriter.Feature.FieldBased，@JSONField注解就生效了
+        // config.setWriterFeatures(JSONWriter.Feature.NullAsDefaultValue);
         config.setDateFormat("yyyy-MM-dd HH:mm:ss");
         converter.setFastJsonConfig(config);
         List<MediaType> mediaTypes = new ArrayList<>();
